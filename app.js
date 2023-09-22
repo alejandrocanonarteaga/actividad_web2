@@ -8,7 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 
 // Conecta a la base de datos de MongoDB Atlas
-const dbURI = 'mongosh "mongodb://federateddatabaseinstance0-i7yuf.a.query.mongodb.net/" --tls --authenticationDatabase admin --username 0000';
+const dbURI = 'mongodb+srv://usuario:ZhRiRUBYJxBEjfct@cluster0.5domenm.mongodb.net/mibasededatos';
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Conexión a MongoDB Atlas establecida');
